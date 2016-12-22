@@ -1,0 +1,109 @@
+<?php
+return array(
+    'broker_list' => '10.138.65.216:9092,10.138.65.217:9092,10.138.65.218:9092',
+    'zookeeper_list' => '10.138.65.216:2181,10.138.65.217:2181,10.138.65.218:2181',
+    // 消费配置
+    'consume' => array(
+    /*
+        'test_emqapi' => array(
+            // 'cluster' => 'online',//默认为online，可不设
+            'topic' => 'wyl_test',
+            'partitionNum' => 2,
+            'callback' => array(
+                'AdConsume',
+                'BudgetUpdate'
+            ),
+            'category' => 1,
+            'max_requests' => 10000,
+            // 'group' => 'test',//默认为topic_callback
+            // 'singleOffsetCommit' => true, //如果设置为true，则每消费1条消息保存一次offset，如果为false，则每次消息完一批（最大可能为maxFetchSize)后提交一次。default:false
+            'check_consumer_interval' => 10, // 检查consumer zk 变动情况间隔
+            'commit_offset_interval' => 10, // 单位s,提交offset间隔，当singleOffsetCommit = false时候生效
+            'commit_offset_method' => 1, // 提交方式，默认1 按时间间隔提交, 2表示每次fetch之后提交
+            'owner' => array(
+                array(
+                    '13701308816',
+                    'wangyunlong@360.cn'
+                )
+            )
+        ),
+        */
+        
+        'esc_app_plan_add' => array(
+            'topic' => 'app_plan_add',
+            'partitionNum' => 2,
+            'callback' => array(
+                'IncrementCommand',
+                'boolAddPlan'
+            ),  
+            'category' => 2,
+            'singleOffsetCommit' => false, // true,
+            'max_requests' => 10000, 
+            'check_consumer_interval' => 10, 
+            'commit_offset_interval' => 10, 
+            'commit_offset_method' => 1,
+            'owner' => array(
+                array(
+                'dongdapeng@360.cn'
+                )
+            )   
+        ),
+        'esc_app_plan_update' => array(
+            'topic' => 'app_plan_update',
+            'partitionNum' => 2,
+            'callback' => array(
+                'IncrementCommand',
+                'boolModPlan'
+            ),  
+            'category' => 2,
+            'singleOffsetCommit' => false, // true,
+            'max_requests' => 10000, 
+            'check_consumer_interval' => 10, 
+            'commit_offset_interval' => 10, 
+            'commit_offset_method' => 1,
+            'owner' => array(
+                array(
+                'dongdapeng@360.cn'
+                )
+            )   
+        ),
+        'esc_app_plan_budget_update' => array(
+            'topic' => 'app_plan_budget_update',
+            'partitionNum' => 2,
+            'callback' => array(
+                'IncrementCommand',
+                'boolBatchUpdatePlan'
+            ),  
+            'category' => 2,
+            'singleOffsetCommit' => false, // true,
+            'max_requests' => 10000, 
+            'check_consumer_interval' => 10, 
+            'commit_offset_interval' => 10, 
+            'commit_offset_method' => 1,
+            'owner' => array(
+                array(
+                'dongdapeng@360.cn'
+                )
+            )   
+        ),
+        'esc_ranking_keyword_update'=> array(
+            'topic'=>'ranking_keyword',
+            'partitionNum' => 1,
+            'callback' => array(
+                'KeywordRankCommand',
+                'batchUpdate'
+            ),
+            'category' => 2,
+            'singleOffsetCommit' => false, // true,
+            'max_requests' => 10000,
+            'check_consumer_interval' => 10,
+            'commit_offset_interval' => 10,
+            'commit_offset_method' => 1,
+            'owner' => array(
+                array(
+                    'dongpingan@360.cn'
+                )
+            )
+        ),
+    )
+);

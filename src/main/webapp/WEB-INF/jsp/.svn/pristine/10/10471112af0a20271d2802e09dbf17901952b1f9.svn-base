@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+.spread p, .spread ul, .spread li, .spread h3 { margin: 0; padding: 0; list-style: none; }
+.spread {width: 620px;padding: 8px;background:#fff8e7;font-family: arial;}
+.spread em, cite, b{font-style: normal; font-weight:normal;}
+.spread em, b{color: #CC0000}
+.spread a{color:#0E1CB3;text-decoration: underline}
+.spread .result {width: 620px; background:#fff8e7;margin: 0; padding: 0; list-style: none;}
+.spread .result li {padding-top:23px; margin-bottom:0;font-size: 13px; line-height: 18px;position: relative;}
+.spread #djbox li:first-child{padding-top:8px;}
+.spread .result li.last { margin-bottom:0;}
+.spread .result li h3 { font-weight: normal; font-size: medium;}
+.spread .result li h3 span { margin-left:5px; color: #009900; font-size:13px;}
+.spread .result li p{line-height: 1.5em; font-size: 1em; text-align: justify; word-break: break-all; word-wrap: break-word;color:#171717;}
+.spread .result li p cite{color: green;}
+.spread .helpSpread {color:#666;font-size:13px;width:100%; height:17px;}
+.spread .helpSpread p.fl{float:left;display:inline;width:60%;margin:0;padding:0}
+.spread .helpSpread p.fr{float:right;display:inline; width:40%; text-align:right;margin:0;padding:0}
+#right_show{position:absolute;left:745px;top:0; width:270px; overflow:hidden; margin:8px 0 0; padding:0; background:none}
+#right_show .result {width:100%;margin: 0; padding: 0; list-style: none; background:none}
+#right_show .result li h3 { width:100%; overflow:hidden; height:18px;word-break: break-all;word-wrap: break-word;}
+#right_show #rightbox li:first-child{padding-top:8px;}
+#right_show .helpSpread {color:#999;}
+</style>
+</head>
+<body>
+<div id="right_show" class="spread">
+    <div class="helpSpread">
+        搜索推广
+    </div>
+    <ul id="rightbox" class="result">
+        <li>
+            <h3><a href="http://360.cn/" target="_blank" _cs="http://360.cn/">众信<em>旅游</em>-环球<em>旅游</em>好伙伴 | utourworld.com</a></h3>
+            <p>提供欧,澳,美加,非,日韩,东南亚等<em>旅游</em>国际东南亚等<em>旅游</em>国际酒店,国际机票,签证400-819-9898<br/>
+                <cite>www.utourworld.com/</cite></p>
+        </li>
+        <li>
+            <h3><a href="http://baidu.com/" target="_blank" _cs="http://baidu.com/">众信<em>旅游</em>-环球<em>旅游</em>好伙伴 | utourworld.com</a></h3>
+            <p>提供欧,澳,美加,非,日韩,东南亚等<em>旅游</em>国际酒店,国际亚等<em>旅游</em>400-819-9898<br/>
+                <cite>www.utourworld.com/</cite></p>
+        </li>
+    </ul>
+    <ul id="google_afs_narror" class="result">
+    </ul>
+</div>
+<div class="spread">
+    <div class="helpSpread">
+        <p class="fl">与"<em>旅游</em>"相关的搜索推广</p><p class="fr">搜索推广</p>
+    </div>
+    <ul id="djbox" class="result">
+        <li>
+          <h3><a href="http://360.cn/" target="_blank" _cs="http://360.cn/">众信<em>旅游</em>-环球<em>旅游</em>好伙伴 | utourworld.com</a></h3>
+          <p>提供欧,澳,美加,非,日韩,东南亚等<em>旅游</em>国际酒店,国际机票,签证提供欧,澳,美加,非,日韩,东南亚等<em>旅游</em>国际酒店,国际机票,签证400-819-9898<br/><cite>www.utourworld.com/</cite></p>
+        </li>
+        <li>
+          <h3><a href="http://baidu.com/" target="_blank" _cs="http://baidu.com/">众信<em>旅游</em>-环球<em>旅游</em>好伙伴 | utourworld.com</a></h3>
+          <p>提供欧,澳,美加,非,日韩,东南亚等<em>旅游</em>国际酒店,国际机票,签证提供欧,澳,美加,非,日韩,东南亚等<em>旅游</em>国际酒店,国际机票,签证400-819-9898<br/><cite>www.utourworld.com/</cite></p>
+        </li>
+    </ul>
+    <ul id="google_afs_wide" class="result">
+    </ul>
+</div>
+
+<script type="text/javascript" language="JavaScript">
+/*function GetParam(name) {
+    var match = new RegExp(name + "=([^&]+)","i").exec(location.search);
+    return (match) ? decodeURIComponent(match[1]) : null;
+}
+function scan_array(arr) {
+    for(var key in arr) {
+        if(typeof(arr[key]) == 'array' || typeof(arr[key]) == 'object'){
+            scan_array(arr[key]);
+        }else{
+            document.write(key + ' = ' + arr[key] + '<br>');
+        }
+    }
+    document.write('<br>');
+}*/
+function google_afs_request_done(google_ads){
+    var google_num_ads = google_ads.length;
+    if (google_num_ads <= 0){
+        return;
+    }
+    //scan_array(google_ads);
+    var wideAds = "";   // wide ad unit html text
+    var narrowAds = "";   // narrow ad unit html text
+    var Ads = "";   // narrow ad unit html text
+    for(i=0;i<google_num_ads;i++){
+        Ads += google_ads[i];
+        if(google_ads[i].type=="text/wide"){
+            // render a wide ad
+            wideAds+='<li><h3><a href="'+google_ads[i].url+'&from=google&gid=left'+i+'" target="_blank">'+google_ads[i].line1+
+            '</a></h3><p>'+google_ads[i].line2+'<br/><cite>'+google_ads[i].visible_url+'</cite></p></li>';
+        }else{
+            // render a narrow ad
+            narrowAds+='<li><h3><a href="'+google_ads[i].url+'&from=google&gid=right'+i+'" target="_blank">'+google_ads[i].line1+
+            '</a></h3><p>'+google_ads[i].line2+'<br/>'+google_ads[i].line3+'<br/><cite>'+google_ads[i].visible_url+'</cite></p></li>';
+        }
+    }
+    document.getElementById("google_afs_wide").innerHTML=wideAds;
+    document.getElementById("google_afs_narror").innerHTML=narrowAds;
+}
+google_afs_query = "鲜花";
+google_afs_ad = 'w3n5'; // specify the number of ads you are requesting
+google_afs_url_domain = 'afs.googlesyndication.com'
+google_afs_client = 'googlepsotest-afsjs'; // substitute your client ID
+google_afs_channel = '1234567890'; // enter your custom channel ID
+google_afs_hl = 'cn'; // enter your interface language if not English
+// google_afs_ie = 'utf8'; // select input encoding scheme
+// google_afs_oe = 'utf8'; // select output encoding scheme
+</script>
+<script language="JavaScript" src="http://afs.googlesyndication.com/afsonline/show_afs_ads.js "></script>
+<script type="text/javascript">
+/**
+*dd鼠标点击的按下时间戳
+*ud鼠标点击的弹起时间戳
+*st展现页面打开的时间
+**/
+var dd,ud,st=new Date().getTime();
+function timestamp() { 
+return new Date().getTime();
+};
+function addHandler(element, type, handler){
+    if(element.addEventListener){
+        element.addEventListener(type, handler, false);
+    }else if(element.attachEvent){
+        element.attachEvent('on' + type, handler);
+    }else{
+        element['on' + type] = handler;
+    }
+};
+(function(){
+    var ulist=document.getElementById('djbox');
+    addHandler(ulist, 'mousedown', function(event){
+        var x = event.target || event.srcElement;
+        if(x.nodeName == 'A' || (x.nodeName == 'EM' && x.parentNode.nodeName == 'A')){
+            dd = timestamp();
+        }
+    });
+    addHandler(ulist, 'mouseup', function(event){
+        var x = event.target || event.srcElement,
+           cs = x.getAttribute('_cs') || x.parentNode.getAttribute('_cs');
+        if((x.nodeName == 'A' || x.parentNode.nodeName == 'A') && cs){
+            ud = timestamp();
+            var ni = new Image();
+            ni.src=cs+'&st='+st+'&dd='+dd+'&ud='+ud;
+        }
+    });
+})();
+</script>
+</body>
+</html>

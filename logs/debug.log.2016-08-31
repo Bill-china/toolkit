@@ -1,0 +1,64 @@
+2016-08-31 10:09:37  [ 1254960805@qtp-998376890-5:52433883 ] - [ DEBUG ]  DispatcherServlet with name 'appServlet' processing GET request for [/toolkit/index.do]
+2016-08-31 10:09:37  [ 1254960805@qtp-998376890-5:52433885 ] - [ DEBUG ]  Looking up handler method for path /index.do
+2016-08-31 10:09:37  [ 1254960805@qtp-998376890-5:52433887 ] - [ DEBUG ]  Returning handler method [public java.lang.String com.qihoo.toolkit.menu.MenuController.indexManager()]
+2016-08-31 10:09:37  [ 1254960805@qtp-998376890-5:52433887 ] - [ DEBUG ]  Returning cached instance of singleton bean 'menuController'
+2016-08-31 10:09:37  [ 1254960805@qtp-998376890-5:52433887 ] - [ DEBUG ]  Last-Modified value for [/toolkit/index.do] is: -1
+2016-08-31 10:09:37  [ 1254960805@qtp-998376890-5:52433888 ] - [ DEBUG ]  Rendering view [org.springframework.web.servlet.view.JstlView: name 'index'; URL [/WEB-INF/jsp/index.jsp]] in DispatcherServlet with name 'appServlet'
+2016-08-31 10:09:37  [ 1254960805@qtp-998376890-5:52433888 ] - [ DEBUG ]  Forwarding to resource [/WEB-INF/jsp/index.jsp] in InternalResourceView 'index'
+2016-08-31 10:09:37  [ 1254960805@qtp-998376890-5:52433931 ] - [ DEBUG ]  Successfully completed request
+2016-08-31 10:09:40  [ 921955474@qtp-998376890-7:52437029 ] - [ DEBUG ]  DispatcherServlet with name 'appServlet' processing GET request for [/toolkit/generatePic.do]
+2016-08-31 10:09:40  [ 921955474@qtp-998376890-7:52437030 ] - [ DEBUG ]  Looking up handler method for path /generatePic.do
+2016-08-31 10:09:40  [ 921955474@qtp-998376890-7:52437031 ] - [ DEBUG ]  Returning handler method [public java.lang.String com.qihoo.toolkit.menu.MenuController.generatePicManager()]
+2016-08-31 10:09:40  [ 921955474@qtp-998376890-7:52437031 ] - [ DEBUG ]  Returning cached instance of singleton bean 'menuController'
+2016-08-31 10:09:40  [ 921955474@qtp-998376890-7:52437031 ] - [ DEBUG ]  Last-Modified value for [/toolkit/generatePic.do] is: -1
+2016-08-31 10:09:40  [ 921955474@qtp-998376890-7:52437032 ] - [ DEBUG ]  Rendering view [org.springframework.web.servlet.view.JstlView: name 'generatePic'; URL [/WEB-INF/jsp/generatePic.jsp]] in DispatcherServlet with name 'appServlet'
+2016-08-31 10:09:40  [ 921955474@qtp-998376890-7:52437032 ] - [ DEBUG ]  Forwarding to resource [/WEB-INF/jsp/generatePic.jsp] in InternalResourceView 'generatePic'
+2016-08-31 10:09:40  [ 921955474@qtp-998376890-7:52437033 ] - [ DEBUG ]  Successfully completed request
+2016-08-31 10:10:36  [ 921955474@qtp-998376890-7:52493684 ] - [ DEBUG ]  DispatcherServlet with name 'appServlet' processing POST request for [/toolkit/importPicFile.do]
+2016-08-31 10:10:36  [ 921955474@qtp-998376890-7:52493687 ] - [ DEBUG ]  Found multipart file [myfile] of size 101366 bytes with original filename [99k_1200_627.jpg], stored at [E:\javaweb_test\toolkit\target\work\upload_f6ec51a4_6c4c_44a7_91e0_647e25c1ca9a_00000003.tmp]
+2016-08-31 10:10:36  [ 921955474@qtp-998376890-7:52493687 ] - [ DEBUG ]  Looking up handler method for path /importPicFile.do
+2016-08-31 10:10:36  [ 921955474@qtp-998376890-7:52493688 ] - [ DEBUG ]  Returning handler method [public java.lang.String com.qihoo.toolkit.generatepic.controller.GenePicController.importPicFile(java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)]
+2016-08-31 10:10:36  [ 921955474@qtp-998376890-7:52493688 ] - [ DEBUG ]  Returning cached instance of singleton bean 'genePicController'
+2016-08-31 10:10:37  [ 921955474@qtp-998376890-7:52493708 ] - [ INFO ]  图片信息初始化
+2016-08-31 10:10:37  [ 921955474@qtp-998376890-7:52493758 ] - [ INFO ]  图片截取，生成图片：E:\javaweb_test\toolkit\src\main\webapp\upload\99k_1200_627_20160831101036/99k_1200_627_720_240.jpg
+2016-08-31 10:10:37  [ 921955474@qtp-998376890-7:52493996 ] - [ INFO ]  图片类型转换，转换后图片：E:\javaweb_test\toolkit\src\main\webapp\upload\99k_1200_627_20160831101036/99k_1200_627_720_240.png
+2016-08-31 10:10:37  [ 921955474@qtp-998376890-7:52494020 ] - [ DEBUG ]  Written [{"result":"success","filename":"99k_1200_627_20160831101036.zip"}] as "text/html;charset=utf-8" using [org.springframework.http.converter.StringHttpMessageConverter@73a55a48]
+2016-08-31 10:10:37  [ 921955474@qtp-998376890-7:52494021 ] - [ DEBUG ]  Null ModelAndView returned to DispatcherServlet with name 'appServlet': assuming HandlerAdapter completed request handling
+2016-08-31 10:10:37  [ 921955474@qtp-998376890-7:52494022 ] - [ DEBUG ]  Cleaning up multipart file [myfile] with original filename [99k_1200_627.jpg], stored at [E:\javaweb_test\toolkit\target\work\upload_f6ec51a4_6c4c_44a7_91e0_647e25c1ca9a_00000003.tmp]
+2016-08-31 10:10:37  [ 921955474@qtp-998376890-7:52494022 ] - [ DEBUG ]  Successfully completed request
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511105 ] - [ DEBUG ]  DispatcherServlet with name 'appServlet' processing POST request for [/toolkit/importPicFile.do]
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511109 ] - [ DEBUG ]  Found multipart file [myfile] of size 101366 bytes with original filename [99k_1200_627.jpg], stored at [E:\javaweb_test\toolkit\target\work\upload_f6ec51a4_6c4c_44a7_91e0_647e25c1ca9a_00000005.tmp]
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511110 ] - [ DEBUG ]  Looking up handler method for path /importPicFile.do
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511111 ] - [ DEBUG ]  Returning handler method [public java.lang.String com.qihoo.toolkit.generatepic.controller.GenePicController.importPicFile(java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)]
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511111 ] - [ DEBUG ]  Returning cached instance of singleton bean 'genePicController'
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511130 ] - [ INFO ]  图片信息初始化
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511171 ] - [ INFO ]  图片截取，生成图片：E:\javaweb_test\toolkit\src\main\webapp\upload\99k_1200_627_20160831101054/99k_1200_627_720_360.jpg
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511218 ] - [ INFO ]  图片类型转换，转换后图片：E:\javaweb_test\toolkit\src\main\webapp\upload\99k_1200_627_20160831101054/99k_1200_627_720_360.png
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511248 ] - [ DEBUG ]  Written [{"result":"success","filename":"99k_1200_627_20160831101054.zip"}] as "text/html;charset=utf-8" using [org.springframework.http.converter.StringHttpMessageConverter@73a55a48]
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511249 ] - [ DEBUG ]  Null ModelAndView returned to DispatcherServlet with name 'appServlet': assuming HandlerAdapter completed request handling
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511250 ] - [ DEBUG ]  Cleaning up multipart file [myfile] with original filename [99k_1200_627.jpg], stored at [E:\javaweb_test\toolkit\target\work\upload_f6ec51a4_6c4c_44a7_91e0_647e25c1ca9a_00000005.tmp]
+2016-08-31 10:10:54  [ 921955474@qtp-998376890-7:52511251 ] - [ DEBUG ]  Successfully completed request
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624774 ] - [ DEBUG ]  DispatcherServlet with name 'appServlet' processing POST request for [/toolkit/importPicFile.do]
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624776 ] - [ DEBUG ]  Found multipart file [myfile] of size 101366 bytes with original filename [99k_1200_627.jpg], stored at [E:\javaweb_test\toolkit\target\work\upload_f6ec51a4_6c4c_44a7_91e0_647e25c1ca9a_00000007.tmp]
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624776 ] - [ DEBUG ]  Looking up handler method for path /importPicFile.do
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624777 ] - [ DEBUG ]  Returning handler method [public java.lang.String com.qihoo.toolkit.generatepic.controller.GenePicController.importPicFile(java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)]
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624777 ] - [ DEBUG ]  Returning cached instance of singleton bean 'genePicController'
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624800 ] - [ INFO ]  图片信息初始化
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624833 ] - [ INFO ]  图片截取，生成图片：E:\javaweb_test\toolkit\src\main\webapp\upload\99k_1200_627_20160831101248/99k_1200_627_720_240.jpg
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624870 ] - [ INFO ]  图片类型转换，转换后图片：E:\javaweb_test\toolkit\src\main\webapp\upload\99k_1200_627_20160831101248/99k_1200_627_720_240.png
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624892 ] - [ DEBUG ]  Written [{"result":"success","filename":"99k_1200_627_20160831101248.zip"}] as "text/html;charset=utf-8" using [org.springframework.http.converter.StringHttpMessageConverter@73a55a48]
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624893 ] - [ DEBUG ]  Null ModelAndView returned to DispatcherServlet with name 'appServlet': assuming HandlerAdapter completed request handling
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624896 ] - [ DEBUG ]  Cleaning up multipart file [myfile] with original filename [99k_1200_627.jpg], stored at [E:\javaweb_test\toolkit\target\work\upload_f6ec51a4_6c4c_44a7_91e0_647e25c1ca9a_00000007.tmp]
+2016-08-31 10:12:48  [ 921955474@qtp-998376890-7:52624896 ] - [ DEBUG ]  Successfully completed request
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678485 ] - [ DEBUG ]  DispatcherServlet with name 'appServlet' processing POST request for [/toolkit/importPicFile.do]
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678487 ] - [ DEBUG ]  Found multipart file [myfile] of size 101366 bytes with original filename [99k_1200_627.jpg], stored at [E:\javaweb_test\toolkit\target\work\upload_f6ec51a4_6c4c_44a7_91e0_647e25c1ca9a_00000009.tmp]
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678488 ] - [ DEBUG ]  Looking up handler method for path /importPicFile.do
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678488 ] - [ DEBUG ]  Returning handler method [public java.lang.String com.qihoo.toolkit.generatepic.controller.GenePicController.importPicFile(java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)]
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678489 ] - [ DEBUG ]  Returning cached instance of singleton bean 'genePicController'
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678493 ] - [ INFO ]  图片信息初始化
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678541 ] - [ INFO ]  图片截取，生成图片：E:\javaweb_test\toolkit\src\main\webapp\upload\99k_1200_627_20160831101341/99k_1200_627_720_480.jpg
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678602 ] - [ INFO ]  图片类型转换，转换后图片：E:\javaweb_test\toolkit\src\main\webapp\upload\99k_1200_627_20160831101341/99k_1200_627_720_480.png
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678636 ] - [ DEBUG ]  Written [{"result":"success","filename":"99k_1200_627_20160831101341.zip"}] as "text/html;charset=utf-8" using [org.springframework.http.converter.StringHttpMessageConverter@73a55a48]
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678637 ] - [ DEBUG ]  Null ModelAndView returned to DispatcherServlet with name 'appServlet': assuming HandlerAdapter completed request handling
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678639 ] - [ DEBUG ]  Cleaning up multipart file [myfile] with original filename [99k_1200_627.jpg], stored at [E:\javaweb_test\toolkit\target\work\upload_f6ec51a4_6c4c_44a7_91e0_647e25c1ca9a_00000009.tmp]
+2016-08-31 10:13:41  [ 947415329@qtp-998376890-9:52678639 ] - [ DEBUG ]  Successfully completed request

@@ -1,0 +1,64 @@
+@charset "utf-8";
+/*Reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;}
+body,button,input,textarea{font:12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+fieldset,img{border:0;vertical-align:top;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,th,var{font-weight:normal;font-style:normal;}
+a{text-decoration:none;cursor:pointer;color:#0c6fbb;}
+a:hover{text-decoration:none;color:#333333;}
+a.black{text-decoration:none;cursor:pointer;color:#000;}
+a.black:hover{text-decoration:none;color:#000;}
+.help_a a{ color:#7E7E7E}
+body{ background:#fff url(/images/bg.png) top repeat-x; color:#7e7e7e;}
+.cont{ clear:both; background:url(/images/conbg.png) no-repeat top center;}
+.wrap{ clear:both; width:960px; margin:0 auto;}
+.header,.footer{ clear:both; width:960px; height:60px; margin:0 auto;}
+.header{ clear:both; height:75px;}
+.footer{ border-top:1px solid #d0d0d0; padding-top:10px; margin-top:20px; text-align:center; color:#999; line-height:2;}
+
+.header .logo{ float:left; width:290px; height:85px; background:url(/images/logo.png) no-repeat; margin:7px 0 0 0; display:inline;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="/images/logo.png");_background:none;}
+.header .logo a{ display:block; width:290px; height:70px; line-height:200px; overflow:hidden;}
+.bnr{ clear:both; height:256px; background:url(/images/bnr.jpg) no-repeat; margin-bottom:20px; position:relative;}
+.header span{ float:right; color:#666666; padding:40px 20px 0 0;}
+.header span a{ margin:0 3px;}
+.btn1{ display:block; position:absolute; width:182px; height:55px; top:155px; right:66px; overflow:hidden; line-height:200px;}
+.area{ clear:both; overflow:hidden; zoom:1; padding:0 12px;}
+.advan{ float:left; width:365px; margin-left:45px;}
+.right{ float:right; width:240px;}
+.tit{ height:33px; line-height:33px; border-bottom:1px dashed #d6d6d6; font-size:14px; font-weight:bold; color:#000; padding-left:3px;}
+/*step*/
+.step{ float:left; width:240px;}
+.step ul{ height:339px; background:url(/images/step.png) no-repeat; margin:17px 0 20px 0;}
+.step li{ padding:40px 0 33px 55px;}
+/*advan*/
+.advanc dl{ clear:both; overflow:hidden; zoom:1; padding:15px 0;}
+.advanc dt{ float:left; width:48px; height:48px; background:url(/images/imgbg-h.png) no-repeat; margin:5px 20px 0 0;}
+.advanc dd{ line-height:1.7;}
+.advanc dd h3{ font-size:14px; color:#000;}
+.advanc .ico-2{ background-position:0 -49px;}
+.advanc .ico-3{ background-position:0 -98px;}
+.advanc .ico-4{ background-position:0 -147px;}
+/*login*/
+.login{ height:235px; color:#000;}
+.login h4{ font-weight:normal; color:#ff0000; padding:5px 0 0 3px; _padding-top:3px;}
+.login ul{ padding:0 0 0 5px;}
+.login li{ clear:both; overflow:hidden; zoom:1; padding:4px 0 3px;}
+.login li input{ vertical-align:middle;}
+.login li span{ float:left; width:50px; height:20px; padding:4px 0 0 0;}
+.login li p{ clear:both; color:#e10000; padding:3px 0 0 40px; display:none;}
+.login .error p{ display:block;}
+.login .error .ipt1{ border:1px solid #d41616;}
+.login .error .ipt1 input{ border:1px solid #ffb5ba;}
+.ipt1{ float:left; width:160px; height:23px; border:1px solid #a1a1a1;}
+.ipt1 input{ float:left; width:158px; height:21px; line-height:21px; border:1px solid #fff;}
+.btn2{ width:92px; height:29px; line-height:29px; background:url(/images/imgbg-h.png) no-repeat 0 -196px; border:none; cursor:pointer; font-size:14px; font-weight:bold; color:#fff;}
+.login .ipt2{ width:58px; margin-right:8px;}
+.login .ipt2 input{ width:56px;}
+/*help*/
+.help ul{ padding:10px 0 0 3px;}
+.help li{ height:20px; line-height:20px; padding-left:11px; background:url(/images/dot.png) no-repeat 3px 8px;}
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div id="mainboxad" style="height: 320px; width: 580px; position: absolute; z-index: 111; top: 50%;left: 50%; margin:-160px 0 0 -290px">
+    <div class="fuceng_bar" id="cm1347">
+        <div id="randomDiv_1347_0" style="position: relative; width: 580px; height: 320px; display: block;">
+            <object width="580" height="320" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" id="obj_1347_randomDiv_0">
+                <param value="http://20121122.biz5.sandai.net/portal/image/75/n1351662952975.swf" name="movie">
+                <param value="TL" name="salign">
+                <param value="Transparent" name="wmode">
+                <param value="opaque" name="wmode">
+                <param value="High" name="quality">
+                <embed width="580" height="320" name="obj_1347_randomDiv_0" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent" allowscriptaccess="always" quality="high" src="http://20121122.biz5.sandai.net/portal/image/75/n1351662952975.swf">
+            </object>
+            <a style="position:absolute;left:0px;top:0px;width:580px;height:320px;" target="_blank" href="http://www.baidu.com/" target="_blank"><img style="display:block;overflow:hidden;width:580px;height:320px;border:0 none;" src="http://biz5.sandai.net/portal/images/spacer.gif"></a></div>
+    </div>
+    <div style="position: absolute; z-index: 121; bottom: 0; right: 0;"> <img src="http://www.uuu9.com/images/fc_closed.gif"  style="cursor: pointer;" id="imgClose" /> </div>
+</div>
+<script language="javascript" src="http://s0.qhimg.com/lib/jquery/172.js"></script> 
+<script type="text/javascript">
+(function(){
+function dom(id){return document.getElementById(id)}
+window.onload=hidead;
+dom('imgClose').onclick=tradhide;
+var top_right_second =8,hidet;
+function tradhide(){
+	dom('mainboxad').style.display='none';
+	window.clearTimeout(hidest);
+}
+
+function hidead(){
+	top_right_second --;
+	hidet = setTimeout(hidead,1000);
+	if(top_right_second == 0){
+		tradhide();
+	}
+}
+})();
+</script>
+</body>
+</html>

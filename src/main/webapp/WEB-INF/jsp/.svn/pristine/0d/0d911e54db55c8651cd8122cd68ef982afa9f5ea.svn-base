@@ -1,0 +1,401 @@
+<?php
+return array(
+    'db_stats' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3301;dbname=ad_click',
+        'emulatePrepare' => true,
+        'username' => 'test_dj',
+        'password' => 'test_dj@360',
+        'charset' => 'utf8',
+    ),
+    'db_advert_stats' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form02',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_plan_stats' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form02',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_group_stats' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form02',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360',
+        'charset' => 'utf8',
+    ),
+   'db_stats_report_advert' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form01',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_stats_report_channel' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form02',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_stats_report_group' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form02',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form',
+        'charset' => 'utf8',
+    ),
+    'db_stats_report_group_channel' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form02',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_stats_report_plan' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form02',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+   'db_stats_report_plan_channel' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form02',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_stats_report_user' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_stats_area_report_group' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_stats_area_report_plan' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_stats_area_report_province' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_stats_interest_report' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_stats_keyword_report' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_form',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    'db_book_report' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=dj_book_form',
+        'emulatePrepare' => true,
+        'username' => 'dj_form',
+        'password' => 'dj_form@360.cn',
+        'charset' => 'utf8',
+    ),
+    // 点睛中心库
+    'db_center' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3302;dbname=ad_dianjing',
+        'emulatePrepare' => true,
+        'username' => 'test_dj',
+        'password' => 'test_dj@360',
+        'charset' => 'utf8',
+    ),
+	'ad_material' => array(
+		'connectionString'  => 'mysql:host=106.120.162.230;port=3302;dbname=ad_material',
+		'emulatePrepare'    => true,
+		'username'          => 'test_dj',
+		'password'          => 'test_dj@360',
+		'charset'           => 'utf8',
+	    ),
+    // 点睛子库一 3301 online 3302 trunk
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_dianjing01
+    'dj_bran_1'      => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_dianjing01',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 点睛子库二
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_dianjing02
+    'dj_bran_2'      => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_dianjing02',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 点睛子库三
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_dianjing03
+    'dj_bran_3'      => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_dianjing03',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 点睛子库四
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_dianjing04
+    'dj_bran_4'      => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_dianjing04',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 点睛子库五
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_dianjing05
+    'dj_bran_5'      => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_dianjing05',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+// 点睛子库六
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_dianjing05
+    'dj_bran_6'      => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_dianjing06',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+// 点睛子库五
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_dianjing05
+    'dj_bran_7'      => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_dianjing07',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+// 点睛子库五
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_dianjing05
+    'dj_bran_8'      => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_dianjing08',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+// 点睛子库五
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_dianjing05
+    'dj_bran_9'      => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_dianjing09',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+// 点睛子库五
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_dianjing05
+    'dj_bran_5'      => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_dianjing05',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+
+    // 如意
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_dianjing99
+    'dj_bran_99'      => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_dianjing99',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 统计子库一
+    // mysql -h106.120.162.230 -P3301 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_stat_1'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.230;port=3301;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 统计子库二
+    // mysql -h106.120.162.230 -P3302 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_stat_2'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.230;port=3302;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 统计子库三
+    // mysql -h106.120.162.231 -P3301 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_stat_3'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3301;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 统计子库四
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_stat_4'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    'db_esc_stat_1'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.230;port=3301;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    'db_esc_stat_2'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.230;port=3302;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    'db_esc_stat_3'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3301;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    'db_esc_stat_4'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // ad click log
+    // mysql -h106.120.162.230 -P3301 -utest_dj -ptest_dj@360 -Dad_click_test
+    'click_log'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.230;port=3302;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 地域关键词库一
+    // mysql -h106.120.162.230 -P3301 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_areakw_1'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.230;port=3301;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 地域关键词库二
+    // mysql -h106.120.162.230 -P3302 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_areakw_2'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.230;port=3302;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 地域关键词库三
+    // mysql -h106.120.162.231 -P3301 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_areakw_3'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3301;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 地域关键词库四
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_areakw_4'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+
+    'ad_quota' => array(
+            'connectionString' => 'mysql:host=106.120.162.231;port=3302;dbname=ad_quota',
+            'emulatePrepare' => true,
+            'username' => 'test_dj',
+            'password' => 'test_dj@360',
+            'charset' => 'utf8',
+            ),
+    // id 分配库
+    'allotID' => array(
+        'connectionString' => 'mysql:host=106.120.162.230;port=3307;dbname=dj_allotID',
+        'emulatePrepare' => true,
+        'username' => 'ad_user',
+        'password' => 'ad_password',
+        'charset' => 'utf8',
+    ),
+
+    // 达成率一 
+    // mysql -h106.120.162.230 -P3301 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_rate_1'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.230;port=3301;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 达成率二
+    // mysql -h106.120.162.230 -P3302 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_rate_2'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.230;port=3302;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 达成率三
+    // mysql -h106.120.162.231 -P3301 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_rate_3'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3301;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+    // 达成率四
+    // mysql -h106.120.162.231 -P3302 -utest_dj -ptest_dj@360 -Dad_click_test
+    'db_rate_4'     => array(
+        'connectionString'  => 'mysql:host=106.120.162.231;port=3302;dbname=ad_click_test',
+        'emulatePrepare'    => true,
+        'username'          => 'test_dj',
+        'password'          => 'test_dj@360',
+        'charset'           => 'utf8',
+    ),
+);
+
+

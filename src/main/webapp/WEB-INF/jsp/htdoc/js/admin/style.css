@@ -1,0 +1,76 @@
+/*Reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;}
+body,button,input,textarea{font:12px/1.5 Tahoma,Helvetica,Arial,'ËÎÌו',sans-serif;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+fieldset,img{border:0;vertical-align:top;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,th,var{font-weight:normal;font-style:normal;}
+a{text-decoration:none;cursor:pointer;color:#0066cc;}
+a:hover{text-decoration:none;color:#333333;}
+body{color:#333333;}
+.green{color:#487c09;}
+.blue{color:#0066cc;}
+.red{color:#D90000;}
+.gray{color:#999999;}
+.none{display:none;}
+/*imgbg*/
+.nav,.nav li,.nav li span.cur,.nav li span.cur em,
+.box-tit,.middle span,.ocdoor a,.hopen,.btn1,
+.ad-tag,.ad-tag li,.btn2,.sele,.search p,.btn3,.ad-tab th,.btn4,
+.ad-sersel p,.ad-sersel em a,.ipt3,.ipt4,.ocdoor1,.form-list .date,.btn5,
+.cls,.mbox-selected,.mbox-unselected,.mbox-timehead,.ipt5,.sel1 .ad-tree .open,.btn6,.btn7,
+.form-tag li,.btn8,.form-txt3,.chart-c h2,.btn9,.user-tab th,.ipt6,.tit-1,.help-tit,.btn10,.btn11{ background:url(img/imgbg.png) no-repeat;}
+/*header*/
+.header{ clear:both; height:80px;}
+.header .logo{ float:left; width:262px; height:44px; background:url(img/logo.png) no-repeat; margin:17px 0 0 60px; display:inline;}
+.header .logo a{ display:block; width:262px; height:44px; line-height:200px; overflow:hidden;}
+.info{ float:right; padding:18px 60px 0 0;}
+.info img{ vertical-align:middle;}
+/*nav*/
+.nav{ clear:both; overflow:hidden; height:38px; background-repeat:repeat-x; margin-bottom:14px; padding:0 0 0 40px;}
+.nav li{ float:left; background-position:0 -39px; padding:0 20px; font-size:14px;}
+.nav li.bgn{ background:none;}
+.nav li a,.nav li a:hover{ color:#595959;}
+.nav li em{ float:left; height:29px; padding:9px 0 0 0;}
+.nav li span{ float:left; height:38px; height:38px;}
+.nav li span.cur{ background-position:left -78px; padding-left:20px;}
+.nav li span.cur em{ float:left; background-position:right -78px; padding-right:20px;}
+.nav li span.cur a,.nav li span.cur a:hover{ font-weight:bold; color:#fff;}
+/*wrap*/
+.wrap{ clear:both; padding:0 60px;}
+/*situa*/
+.situa{ clear:both; margin-bottom:12px;}
+.situa-t{ clear:both; line-height:24px; padding-bottom:5px;}
+.situa-c{ clear:both; overflow:hidden; zoom:1; background:#fffad3; border:1px solid #c3dfad; padding:6px 23px;}
+.situa-c ul{ clear:both;}
+.situa-c li{ float:left; width:280px; line-height:24px; color:#646464;}
+/*tab*/
+.tab{ clear:both; overflow:hidden; zoom:1; border:1px solid #c3dfad; background:#ebebeb;}
+.sel1{ float:left; width:110px; margin:9px 0 0 0;}
+.tab-tit{ clear:both; height:36px; padding:0 20px; border:1px solid #c3dfad; border-bottom:none;}
+.tab th{ border:1px solid #c3dfad; background:#f6fef0; height:30px; text-align:left; padding:0 12px; color:#6f9e37;}
+.tab td{ border:1px solid #c3dfad; background:#ffffff; padding:8px 12px; color:#646464;}
+.tab td a{ text-decoration:underline;}
+.tab tr.odd td{ background:#f8f8f8;}
+.ipt3,.ipt4,.ipt5,.ipt6{ width:136px; height:19px; line-height:19px; border:1px solid #b5b5b5; background-position:0 -562px; background-repeat:repeat-x;}
+.ipt4{ width:76px;}
+.ipt5{ width:79px;}
+.ipt6{ width:245px;}
+.tab-titr{ float:right; padding:5px 0 0 0;}
+.btn11{ width:56px; height:27px; background-position:-54px -402px; border:none; cursor:pointer; font-weight:bold; color:#808080;}
+.tab-titr input{ vertical-align:middle;}
+/*search*/
+.search{ float:left;padding:6px 7px 0 9px;}
+.search p{ float:left; width:200px; height:26px; background-position:0 -375px; padding:0; margin:0px;}
+.ipt2{ float:left; width:170px; height:20px; line-height:20px; background:#fff; border:none; margin:0; border:1px solid #fff; margin:2px 0 0 25px;}
+.btn3{ float:left; width:53px; height:26px; background-position:0 -402px; border:none; cursor:pointer;}
+/*page*/
+.page{ text-align:center; clear:both; padding:20px 0;}
+.page a{ display:inline-block; border:1px solid #dddddd; height:18px; line-height:18px; padding:0 5px; color:#9daf64; margin:0 2px;}
+.page a:hover{ color:#9daf3f;}
+.page a.cur{ background:#b2e05d; border:1px solid #b2e05d; font-weight:bold; color:#fff;}
+.page a.cur:hover{ color:#fff;}
+/*footer*/
+.footer{ text-align:center; border-top:1px solid #e6e6e6; margin:20px 60px; padding:10px 0; color:#8c8c8c;}
+.footer a{ color:#8c8c8c;}

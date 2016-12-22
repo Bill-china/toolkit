@@ -1,0 +1,136 @@
+<html>
+<head>
+<script>
+var d=(new Date).getTime(),e=null,f=null,g=!1,h=function(b,a){var c=window;c.addEventListener?c.addEventListener(b,a,!1):c.attachEvent?c.attachEvent("on"+b,a):c["on"+b]=a},i=function(){if(!g&&null!=e&&null!=f){g=!0;var b=["//www.google.com/csi?s=csa&v=3&action=qihoojs&rt=ol.",e,",palt.",f].join(""),a=new Image;a.onload=a.onerror=function(){a.onload=a.onerror=null};a.src=b}};window.googTimeAdsLoaded=function(){f=(new Date).getTime()-d};h("load",function(){e=(new Date).getTime()-d});h("unload",function(){i()});
+setTimeout(i,15E3); 
+</script>
+</head>
+<body>
+<div id="wide_ad_unit"></div>
+
+<div id="narrow_ad_unit"></div>
+
+
+<script language="JavaScript">
+    <!--
+
+     /*
+      * This function retrieves the search query from the URL.
+      */
+
+        function GetParam(name) {
+            var match = new RegExp(name + "=([^&]+)","i").exec(location.search);
+            return (match) ? decodeURIComponent(match[1]) : null;
+        }
+
+
+      /*
+       * This function is required. It processes the google_ads JavaScript object,
+       * which contains AFS ads relevant to the user's search query. The name of
+       * this function <i>must</i> be <b>google_afs_request_done</b>. If this
+       * function is not named correctly, your page will not display AFS ads.
+       */
+
+    function scan_array(arr) {
+        for(var key in arr) {
+            if(typeof(arr[key]) == 'array' || typeof(arr[key]) == 'object') {
+                scan_array(arr[key]);
+            } else {
+            document.write(key + ' = ' + arr[key] + '<br>');
+            }
+        }
+        document.write('<br>');
+    }
+
+
+      function google_afs_request_done(google_ads)
+      {
+          /*
+           * Verify that there are actually ads to display.
+           */
+          var google_num_ads = google_ads.length;
+          if (google_num_ads <= 0)
+          {
+              return;
+          }
+
+        scan_array(google_ads);
+
+          var wideAds = "";   // wide ad unit html text
+          var narrowAds = "";   // narrow ad unit html text
+          var Ads = "";   // narrow ad unit html text
+
+          for(i = 0; i < google_num_ads; i++)
+          {
+                Ads += google_ads[i];
+              if (google_ads[i].type=="text/wide")
+              {
+                  // render a wide ad
+                  wideAds+='<a style="text-decoration:none" onmouseover="javascript:window.status=\'' +
+                          google_ads[i].url + '\';return true;" ' +
+                          'onmouseout="javascript:window.status=\'\';return true;" ' +
+                          'href="' + google_ads[i].url + '">' +
+                          '<span class="ad_line1">' + google_ads[i].line1 + '</span></a><br>' +
+                          '<span class="ad_text">' + google_ads[i].line2 + '</span><br>' +
+                          '<a style="text-decoration:none" onmouseover="javascript:window.status=\'' +
+                          google_ads[i].url + '\';return true;" ' +
+                          'onmouseout="javascript:window.status=\'\';return true;" ' +
+                          'href="' + google_ads[i].url + '">' +
+                          '<span class="ad_url">' + google_ads[i].visible_url + '</span><br><br></a>';
+              }
+
+              else
+              {
+                  // render a narrow ad
+                  narrowAds+='<a style="text-decoration:none" onmouseover="javascript:window.status=\'' +
+                          google_ads[i].url + '\';return true;" ' +
+                          'onmouseout="javascript:window.status=\'\';return true;" ' +
+                          'href="' + google_ads[i].url + '">' +
+                          '<span class="ad_line1">' + google_ads[i].line1 + '</span></a><br>' +
+                          '<span class="ad_text">' + google_ads[i].line2 + '</span><br>' +
+                          '<span class="ad_text">' + google_ads[i].line3 + '</span><br>' +
+                          '<a style="text-decoration:none" onmouseover="javascript:window.status=\'' +
+                          google_ads[i].url + '\';return true;" ' +
+                          'onmouseout="javascript:window.status=\'\';return true;" ' +
+                          'href="' + google_ads[i].url + '">' +
+                          '<span class="ad_url">' + google_ads[i].visible_url + '</span><br><br></a>';
+              }
+          }
+
+          // Write HTML for wide and narrow ads to the proper <div> elements
+          document.getElementById("wide_ad_unit").innerHTML = wideAds;
+          document.getElementById("narrow_ad_unit").innerHTML = narrowAds;
+
+          window.googTimeAdsLoaded&&window.googTimeAdsLoaded();
+      }
+
+
+      google_afs_query = GetParam('q');
+      google_afs_ad = 'w3n5'; // specify the number of ads you are requesting
+      google_afs_url_domain = 'afs.googlesyndication.com'
+      google_afs_client = 'googlepsotest-afsjs'; // substitute your client ID
+      google_afs_channel = '1234567890'; // enter your custom channel ID
+      google_afs_hl = 'cn'; // enter your interface language if not English
+      // google_afs_ie = 'utf8'; // select input encoding scheme
+      // google_afs_oe = 'utf8'; // select output encoding scheme
+
+    -->
+
+    </script>
+
+    <!--
+      /*
+       * The JavaScript returned from the following page uses
+       * the parameter values assigned above to populate an array
+       * of ad objects. Once that array has been populated,
+       * the JavaScript will call the google_afs_request_done
+       * function to display the ads.
+       */
+    -->
+    <script language="JavaScript" src="http://afs.googlesyndication.com/afsonline/show_afs_ads.js "></script>
+
+    <script>
+    </script>
+
+</body>
+</html>
