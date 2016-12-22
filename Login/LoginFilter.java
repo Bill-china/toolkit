@@ -31,7 +31,7 @@ public class LoginFilter implements Filter {
         String uri = req.getRequestURI();
         String url = req.getRequestURL().toString();
         // 登陆请求、初始请求直接放行
-        if ("/toolkit/LoginServlet".equals(uri) || "/toolkit/".equals(uri)) {
+        if ("/toolkit/LoginServlet".equals(uri) || "/toolkit/Login.do".equals(uri)) {
         	//放行        
         	chain.doFilter(request, response);        
         	return;      
@@ -46,11 +46,10 @@ public class LoginFilter implements Filter {
             // 判断cookie中的用户名和密码是否和数据库中的一致，如果一致则放行，否则转发请求到登陆页面
             //如果cookie时间过期，这里就获取不到cookie
             for (Cookie cookie : cookies) {
-            	if ("userinfo".equals(cookie.getName())) {
-            		userinfo = cookie.getValue();
-            		String[] arrUserInfo = userinfo.split(":");
-            		userName = arrUserInfo[0];
-            		password = arrUserInfo[1];
+            	if ("JSESSIONID".equals(cookie.getName())) {
+            		HttpSession session = req.getSession();
+            		userName = (String) session.getAttribute("username");
+            		password = (String) session.getAttribute("password");
             		UserInfoDaoImpl = new UserInfoDaoImpl();
                     try {
                         UserInfo user = UserInfoDaoImpl.checkLogin(userName, password);
@@ -63,9 +62,9 @@ public class LoginFilter implements Filter {
                         }
                         else {
                         	// 重定向到登陆界面 
-                        	req.getRequestDispatcher("Login.do").forward(req, resp);
-//                        	resp.sendRedirect("/toolkit/Login.do");
-                        	return;
+//                        	req.getRequestDispatcher("Login.do").forward(req, resp);
+                        	resp.sendRedirect("/toolkit/Login.do");
+//                        	return;
                         }
                     }
                     catch (SQLException e){
@@ -73,14 +72,14 @@ public class LoginFilter implements Filter {
                     }
             	}
             }
-            req.getRequestDispatcher("Login.do").forward(req, resp);
-//            resp.sendRedirect("/toolkit/Login.do");
-        	return;
+//            req.getRequestDispatcher("Login.do").forward(req, resp);
+            resp.sendRedirect("/toolkit/Login.do");
+//        	return;
         }
         else {
-        	req.getRequestDispatcher("Login.do").forward(req, resp);
-//        	resp.sendRedirect("/toolkit/Login.do");
-            return;
+//        	req.getRequestDispatcher("Login.do").forward(req, resp);
+        	resp.sendRedirect("/toolkit/Login.do");
+//            return;
 //        	chain.doFilter(request, response);
 //            return;
         }

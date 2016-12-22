@@ -39,13 +39,15 @@ public class LoginServlet extends HttpServlet {
 			UserInfo ui = UserInfoDaoImpl.checkLogin(username, pwd);
 			if (null != ui) {
 				HttpSession session = request.getSession();
-				String userinfo = String.format("%s:%s", username, pwd);
-				Cookie cookie = new Cookie("userinfo", userinfo);        
+				session.setAttribute("username", username);       
+				session.setAttribute("password", pwd);
+				Cookie cookie = new Cookie("JSESSIONID", session.getId());
 				// 设置cookie的存储时长        
 				cookie.setMaxAge(expires);        
 				// 把cookie发送给浏览器        
 				response.addCookie(cookie);        
-				request.getRequestDispatcher(uri).forward(request, response);
+//				request.getRequestDispatcher(uri).forward(request, response);
+				response.sendRedirect(uri);
 			}
 			else {
 				//用户名或密码有误
