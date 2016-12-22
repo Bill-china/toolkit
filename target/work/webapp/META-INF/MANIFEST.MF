@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Build-Jdk: 1.7.0_76
-Built-By: xujie-iri
-Created-By: Apache Maven 3.0.4
-Archiver-Version: Plexus Archiver
-
